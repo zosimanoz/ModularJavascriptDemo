@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Modular Js tutorial</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="jquery/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">                
+            <div class="row">
+                
+                <div id="peopleModule">
+                    <h3>People</h3>
+                    <input type="text" placeholder="name" class="form-control">
+                    <p style="margin-top:10px"><button id="addPerson" class="btn btn-success">Add People</button></p>
+                    
+                    <ul id="people" class="list-group">     
+                    </ul>
+                </div>
+                <div class="well well-sm">
+                    <div id="statsModule">
+                         <h4>Active Users Count: <span></span> </h4>  
+                         
+                         <div class="list"></div>                  
+                    </div>
+                </div>
+                
+                <div class="well well-sm">
+                    <h4>All active users list :</h4>
+                    <div id="listModule">
+                    </div>
+                </div>
+             
+            </div>            
+        </div>
+        
+        
+        <script src="scripts/pubsub_module.js"></script>
+        <script src="scripts/people_list_module.js"></script>
+        
+        <script src="scripts/stats_not_good.js"></script>
+        <script src="scripts/people_module_revealed.js"></script>
+        
+        <!--<script src="scripts/people_module.js"></script>-->
+        <!--<script src="scripts/badmodule.js"></script>-->
+        
+    </body>
+</html>
